@@ -1,2 +1,3 @@
-# python-study
-python study
+## 学习python
+
+[1、基础数据类型.py](./1、基础数据类型.py)
