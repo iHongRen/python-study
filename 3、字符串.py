@@ -1,5 +1,7 @@
 # 在 Python 中，字符串是以单引号或双引号或三引号引起来的。
 s0 = 'hello'
+print(type(s0))  # 输出: <class 'str'>
+
 s1 = "world"
 s2 = '''
 hello

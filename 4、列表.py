@@ -1,6 +1,7 @@
 # Python 中的列表 List, 就是其他语言的中的数组 Array。
 # 创建一个空列表
 my_list = []
+print(type(my_list))  # 输出: <class 'list'>
 
 # 创建一个包含一些元素的列表
 my_list = [1, 2, 3, 4, 5]
