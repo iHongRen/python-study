@@ -1,3 +1,5 @@
+# 列表 List
+
 # Python 中的列表 List, 就是其他语言的中的数组 Array。
 # 创建一个空列表
 my_list = []
