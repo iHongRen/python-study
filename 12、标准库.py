@@ -36,6 +36,9 @@ with io.open('my_module.py', 'r') as f:
 print(math.sqrt(16)) # 计算平方根, 输出: 4
 print(math.pow(2, 3)) # 计算2的3次方, 输出: 8
 print(math.floor(3.7)) # 向下取整, 输出: 3
+print(math.ceil(3.7)) # 向上取整, 输出: 4
+print(math.pi) # 输出: 3.141592653589793
+print(math.inf) # 无穷大 输出: inf
 
 # random 模块提供了随机数生成相关的功能。
 print(random.randint(1, 10)) # 生成1到10之间的随机整数
