@@ -133,17 +133,15 @@ divide(10, 0)
 # 打开文件时, with 语句可以自动关闭文件, 无需手动调用 close() 方法
 # with 语句可以简化代码, 提高代码的可读性
 
+file = None
 try:
-    f = open("file.txt", "r")
-    print(f.read())
+    file = open("file.txt", "r")
+    print(file.read())
 except Exception as e:
     print(e)  # 输出: file.txt: No such file or directory
 finally:
-    try:
-        f.close()
-    except Exception as e:
-        print(e) # 输出: name 'f' is not defined
-
+    if file:
+        file.close()
 
 # 使用 with 语句简化上述代码, 无需手动调用 close() 方法
 
