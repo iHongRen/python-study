@@ -13,7 +13,7 @@
 
 # 1、标准导入
 # 导入 my_module 模块
-import my_module
+import my_module as my_module
 
 # 使用模块中的变量和函数
 print(my_module.PI)  # 输出: 3.14159
