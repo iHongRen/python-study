@@ -1,5 +1,5 @@
 # PDF文件加密
-# pip install pikepdf
+# pip3 install pikepdf
 import pikepdf as pike
 
 def Lock_PDF(pdf_files):

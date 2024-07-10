@@ -14,8 +14,6 @@ data = {
 df = pd.DataFrame(data)
 df.to_excel("student.xlsx", index=False)
 
-
-
 # 2、读取 Excel 文件
 # sheet_name 为工作表名,默认为 0,即第一个。也可以直接写表名: 'Sheet1'
 # 也可以是数组 ['Sheet1','Sheet2']，读取多个表
@@ -137,3 +135,5 @@ print(df)
 
 # 再次写入
 df.to_excel("student1.xlsx", index=False)
+
+
