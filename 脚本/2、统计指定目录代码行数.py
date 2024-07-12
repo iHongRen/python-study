@@ -35,7 +35,7 @@ def calcCodeLines(dir, fileExts):
                 lines += fileLines(filePath)
     return lines
 
-#统计一个的行数
+
 if __name__ == '__main__' :
     # 计算当前目录, py文件的代码总行数
     totalLine = calcCodeLines('./', fileExts=['py'])
