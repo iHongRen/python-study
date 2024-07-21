@@ -3,6 +3,8 @@
 # Pandas 是一个强大的分析结构化数据的工具集；它的使用基础是 Numpy（提供高性能的矩阵运算）；
 # 用于数据挖掘和数据分析，同时也提供数据清洗功能。
 
+# pip3 install pandas
+
 import pandas as pd
 
 # 1、生成 Excel 文件

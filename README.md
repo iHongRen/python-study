@@ -32,3 +32,5 @@
 
 ## 三方库使用
 [1、Pandas处理Excel.py](./三方库/1、Pandas处理Excel.py)<br>
+[2、Pillow处理图像.py](./三方库/2、Pillow处理图像.py)<br>
+
