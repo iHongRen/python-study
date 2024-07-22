@@ -5,7 +5,6 @@
 
 
 ## 基础篇
-
 [1、基础数据类型.py](./基础/1、基础数据类型.py)<br>
 [2、分支循环.py](./基础/2、分支循环.py)<br>
 [3、字符串.py](./基础/3、字符串.py)<br>
@@ -30,7 +29,8 @@
 [1、PDF文件加密.py](./脚本/1、PDF文件加密.py)<br>
 [2、统计指定目录代码行数.py](./脚本/2、统计指定目录代码行数.py)<br>
 
-## 三方库使用
-[1、Pandas处理Excel.py](./三方库使用/1、Pandas处理Excel.py)<br>
-[2、Pillow处理图像.py](./三方库使用/2、Pillow处理图像.py)<br>
+
+## 三方库篇
+[1、Pandas处理Excel.py](./三方库/1、Pandas处理Excel.py)<br>
+[2、Pillow处理图像.py](./三方库/2、Pillow处理图像.py)<br>
 
