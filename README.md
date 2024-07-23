@@ -33,4 +33,6 @@
 ## 三方库篇
 [1、Pandas处理Excel.py](./三方库/1、Pandas处理Excel.py)<br>
 [2、Pillow处理图像.py](./三方库/2、Pillow处理图像.py)<br>
+[3、NumPy基础.py](./三方库/3、NumPy基础.py)<br>
+
 
