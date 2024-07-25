@@ -1,5 +1,6 @@
 # PDF文件加密
 # pip3 install pikepdf
+
 import pikepdf as pike
 
 # 默认加密密码为 123456
@@ -11,3 +12,5 @@ def encryptionPDF(pdf_files, key="123456"):
 
 if __name__ == '__main__' :
     encryptionPDF(["test.pdf"]) 
+
+
