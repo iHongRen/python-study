@@ -27,7 +27,7 @@ print(gmt) # 输出: time.struct_time(tm_year=2024, tm_mon=7, tm_mday=1, tm_hour
 
 # 本地时间
 local = time.localtime()
-print(local)
+print(local) # time.struct_time(tm_year=2024, tm_mon=7, tm_mday=28, tm_hour=17, tm_min=7, tm_sec=35, tm_wday=6, tm_yday=210, tm_isdst=0)
 
 # 解析年月日
 y, m, d, *_ = local
