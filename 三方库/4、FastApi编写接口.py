@@ -5,15 +5,10 @@
 
 # FastAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 并基于标准的 Python 类型提示。我们可以用它来编写服务端接口。
 
-# 终端运行本程序：uvicorn 4、FastApi编写接口:app --reload --host 0.0.0.0 --port 8000
-# 备注：'4、FastApi编写接口' 是本程序的文件名
-# 备注：'app' 是 FastAPI 应用实例的变量名
-# 备注：'--reload' 表示在修改代码后自动重启服务
-# 备注：'--host 0.0.0.0' 表示监听所有可用的 IP 地址，这样任何能够与该机器通信的人都可以公开访问它
-# 备注：'--port 8000' 表示服务端口为 8000
-
 from fastapi import FastAPI,UploadFile,File,Form
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+
 import time
 
 # 创建 FastAPI 应用
@@ -108,3 +103,22 @@ async def upload(file: UploadFile = File(), text: str = Form()):
         "size": len(contents), # 文件大小(字节数)
         "text": text
     }
+
+
+# 用作静态文件服务器
+# 访问地址：http://127.0.0.1:8000/static/index.html
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+# 终端运行本程序：
+# $> uvicorn 4、FastApi编写接口:app --reload --host 0.0.0.0 --port 8000
+# '4、FastApi编写接口' 是本程序的文件名
+# 'app' 是 FastAPI 应用实例的变量名
+# '--reload' 表示在修改代码后自动重启服务
+# '--host 0.0.0.0' 表示监听所有可用的 IP 地址，这样任何能够与该机器通信的人都可以公开访问它
+# '--port 8000' 表示服务端口为 8000
