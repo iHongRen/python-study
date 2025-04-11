@@ -33,6 +33,9 @@ def add_header_to_file(dir_path, file_exts=[".ets"], author="@cxy", header=heade
                     "%Y/%m/%d", time.localtime(os.path.getctime(filePath))
                 )
 
+                # 获取原文件的创建时间和修改时间
+                ctime, mtime = os.path.getctime(filePath), os.path.getmtime(filePath)
+
                 # 替换头注释中的占位符
                 new_content = (
                     header.format(filename=file, author=author, date=date) + content
@@ -41,6 +44,9 @@ def add_header_to_file(dir_path, file_exts=[".ets"], author="@cxy", header=heade
                 # 将新内容写入文件
                 with open(filePath, "w", encoding="utf-8") as f:
                     f.write(new_content)
+
+                os.utime(filePath, (ctime, mtime))  # 还原文件时间
+
                 print(f"已为文件 {filePath} 添加头注释")
 
 
